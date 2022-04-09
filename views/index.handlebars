@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Velha</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="tela">
+        
+        <div class="titulo">
+            <p>JOGO DA VELHA</p>
+        </div>
+
+        <div class="area-central">
+            
+            <div class="opcao-tabuleiro" id="opcao-tabuleiro">
+                <input class="btn-3x3" id="btn-3x3" type="button" value="3 x 3">
+                <input class="btn-5x5" id="btn-5x5" type="button" value="5 x 5">
+            </div>
+    
+            <div class="tabuleiro3x3" id="tabuleiro3x3">
+                <div class="campo3x3" jogador="" posicao="1"></div> <div class="campo3x3" jogador="" posicao="2"></div> <div class="campo3x3" jogador="" posicao="3"></div>
+                <div class="campo3x3" jogador="" posicao="4"></div> <div class="campo3x3" jogador="" posicao="5"></div> <div class="campo3x3" jogador="" posicao="6"></div>
+                <div class="campo3x3" jogador="" posicao="7"></div> <div class="campo3x3" jogador="" posicao="8"></div> <div class="campo3x3" jogador="" posicao="9"></div>
+            </div>
+    
+            <div class="tabuleiro5x5" id="tabuleiro5x5">
+                <div class="campo5x5"></div> <div class="campo5x5"></div> <div class="campo5x5"></div> <div class="campo5x5"></div> <div class="campo5x5"></div>
+                <div class="campo5x5"></div> <div class="campo5x5"></div> <div class="campo5x5"></div> <div class="campo5x5"></div> <div class="campo5x5"></div>
+                <div class="campo5x5"></div> <div class="campo5x5"></div> <div class="campo5x5"></div> <div class="campo5x5"></div> <div class="campo5x5"></div>
+                <div class="campo5x5"></div> <div class="campo5x5"></div> <div class="campo5x5"></div> <div class="campo5x5"></div> <div class="campo5x5"></div>
+                <div class="campo5x5"></div> <div class="campo5x5"></div> <div class="campo5x5"></div> <div class="campo5x5"></div> <div class="campo5x5"></div>
+            </div>
+
+            <div class="display" id="display">
+                <div class="legenda" id="legenda">
+                    <div class="jogador-1" id="jogador-1"></div><span id="nome-jogador-1">JOGADOR 1</span>
+                    <div class="jogador-2" id="jogador-2"></div><span id="nome-jogador-2">JOGADOR 2</span>
+                </div>
+    
+                <div class="apontadores" id="apontadores">
+                    <div class="apontador-jogador-1" id="apontador-jogador-1"><span>inserido via js</span></div>
+                    <div class="apontador-jogador-2" id="apontador-jogador-2"><span>inserido via js</span></div>
+                </div>
+            </div> 
+        </div>
+        
+        <div class="rodape" id="rodape">
+            <p class="mensagem" id="mensagem">Selecione um tabuleiro!</p>
+            <input class="btn-encerrar" id="btn-encerrar" type="button" value="Encerrar">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+   
+</body>
+
+</html>
+
